@@ -648,6 +648,10 @@
 /* /////////////// */
 
 @media (max-width: 23.5em) {
+  .hero {
+    padding: 7rem 2rem 0 2rem;
+  }
+  
   .about {
     padding: 0 4rem;
   }
