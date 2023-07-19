@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAMI</title>
+  </head>
+  <body>
+    <h1>New Website</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, veritatis
+      ullam. Dignissimos nam sunt maiores blanditiis. Quos itaque nobis illo
+      vitae sequi minima optio, ullam velit tenetur magni porro alias.
+    </p>
+  </body>
+  <script>
+    const password = [
+      "agree",
+      "tornado",
+      "try",
+      "book",
+      "coil",
+      "phrase",
+      "burst",
+      "elbow",
+      "want",
+      "mobile",
+      "galaxy",
+      "name",
+    ];
+
+    function tobi(reveal) {
+      var show = prompt(
+        "What is your mother's maiden name ?( in capital letters)"
+      );
+      if (show === "ALUGO") {
+        console.log(`Below are the phrases
+        
+    ${password}`);
+      } else if (show !== "ALUGO") {
+        tobi();
+      }
+    }
+    tobi();
+  </script>
+</html>
