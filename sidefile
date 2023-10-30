@@ -1,0 +1,176 @@
+<!-- GIF Image
+<div class="about-img-box">
+  <img src="images/florid-software-developer.gif" alt="image" />
+</div>
+
+
+/* .hero-img-box::after {
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  left: 35%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 24, 0, 1) 51%,
+    rgb(58, 177, 0) 92%
+  );
+  animation: greenball 10s linear infinite;
+  z-index: 0;
+  transition: all 0.5s;
+} */
+
+@keyframes greenball {
+  25% {
+    transform: scale(0.6, 0.6);
+  }
+  50% {
+    left: 40%;
+  }
+  75% {
+    transform: scale(0.8, 0.8);
+  }
+}
+
+          
+SKILLS GRID
+<div class="skills-grid">
+             1st Box grid (WEB DEVELOPMENT) 
+            <div class="skills-box-one">
+                <p class="color-head-two secondary-B center-text margin-bottom-medium">
+                  Web Development
+                </p>
+                <div class="webdev-grid">
+                  <div class="weblox">
+                    <img src="images\html5-logo.png" alt="html logo" />
+                    <p class="desc color-head-three tertiary-C margin-top-small">
+                      HTML
+                    </p>
+                  </div>
+                  <div class="weblox">
+                    <img src="images\css-logo.png" alt="css logo" />
+                    <p class="desc color-head-three tertiary-C margin-top-small">
+                      CSS
+                    </p>
+                  </div>
+                  <div class="weblox">
+                    <img src="images\javascript-logo.png" alt="js logo" />
+                    <p class="desc color-head-three tertiary-C margin-top-small">
+                      JAVASCRIPT
+                    </p>
+                  </div>
+                  <div class="weblox">
+                    <img src="images/tailwind.png" alt="wordpress logo" />
+                    <p class="desc color-head-three tertiary-C margin-top-small">
+                      TAILWIND
+                    </p>
+                  </div>
+                  <div class="weblox">
+                    <img src="images\webflow-logo.png" alt="webflow logo" />
+                    <p class="desc color-head-three tertiary-C margin-top-small">
+                      WEBFLOW
+                    </p>
+                  </div>
+                  <div class="weblox">
+                    <img src="images\react.png" alt="react logo" />
+                    <p class="desc color-head-three tertiary-C margin-top-small">
+                      REACT
+                    </p>
+                  </div>
+                </div>
+              </div>
+              2nd Box grid ( OTHER SKILLS )
+              <div class="skills-box-one">
+                <p
+                  class="color-head-two secondary-B center-text margin-bottom-medium"
+                >
+                  Other Skills
+                </p>
+                <div class="webdev-grid">
+                  <div class="weblox">
+                    <img src="images/framer-logo.png" alt="python logo" />
+                    <p class="desc color-head-three tertiary-C margin-top-small">
+                      FRAMER
+                    </p>
+                  </div>
+                  <div class="weblox diff2">
+                    <img src="images/wordpress.png" alt="Git logo" />
+                    <p class="desc color-head-three tertiary-C margin-top-small">
+                      WORDPRESS
+                    </p>
+                  </div>
+                  <div class="weblox">
+                    <img src="images/canva-logo.png" alt="canva logo" />
+                    <p class="desc color-head-three tertiary-C margin-top-small">
+                      CANVA
+                    </p>
+                  </div>
+                  <div class="weblox">
+                    <img src="images\github.png" alt="github logo" />
+                    <p class="desc color-head-three tertiary-C margin-top-small">
+                      GITHUB
+                    </p>
+                  </div>
+                  <div class="weblox diff">
+                    <i class="fa-solid fa-file-pen faskills"></i>
+                    <p class="desc color-head-three tertiary-C margin-top-small">
+                      TECH WRITING
+                    </p>
+                  </div>
+                  <div class="weblox">
+                    <img src="images\figma.png" alt="figma logo" />
+                    <p class="desc color-head-three tertiary-C margin-top-small">
+                      FIGMA
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+.webdev-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 2.4rem;
+  row-gap: 2.4rem;
+}
+
+.weblox {
+  justify-self: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem 4rem;
+  border-radius: 7%;
+  box-shadow: 0 0.24rem 2.8rem rgba(0, 56, 7, 0.244);
+  transition: all 0.3s;
+}
+
+.weblox:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 0.24rem 2.8rem rgba(2, 106, 0, 0.218);
+}
+
+.weblox img {
+  width: 9rem;
+  height: 7rem;
+}
+
+.faskills {
+  color: #004114;
+  font-size: 6.4rem;
+}
+
+.diff {
+  padding: 2rem 3rem;
+}
+
+.diff2 {
+  padding: 2rem 3.4rem;
+}
+
+
+          </div>-->

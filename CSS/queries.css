@@ -105,7 +105,7 @@
     display: inline-block;
     z-index: 9999;
     border: none;
-    background-color: transparent;
+    background-color: white;
   }
 
   .main-nav {
@@ -275,19 +275,6 @@
     width: 50%;
   }
 
-  .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 12rem;
-  }
-
-  .webdev-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 4.4rem;
-    row-gap: 4.4rem;
-  }
-
   .section-services {
     padding: 6rem;
   }
@@ -360,23 +347,6 @@
   .testimonial-author,
   .testimonial-job {
     font-size: 1.4rem;
-  }
-
-  .all-blog {
-    gap: 4rem;
-  }
-
-  .blog-list {
-    flex-direction: column;
-  }
-
-  .blog {
-    width: 65%;
-    gap: 1rem;
-  }
-
-  .blog img {
-    align-self: center;
   }
 
   .cta-grid {

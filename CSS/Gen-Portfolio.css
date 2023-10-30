@@ -86,6 +86,9 @@ body {
 }
 
 /* ///// COLORS ///// */
+.prim-white {
+  color: #f0f0f0ee;
+}
 
 .secondary-white {
   color: #d0cece;
@@ -123,9 +126,10 @@ body {
 }
 
 .heading-primary {
-  font-size: 4.4rem;
+  font-size: 6.4rem;
   font-weight: 800;
   line-height: 1.2;
+  letter-spacing: 1.5;
 }
 
 .primary-B {
@@ -170,31 +174,29 @@ body {
 /*/ //////   buttons //////*/
 .btn:link,
 .btn:visited {
-  width: 20rem;
   display: inline-block;
   font-size: 2rem;
-  padding: 2rem 1rem;
+  padding: 2rem 3rem;
   text-align: center;
   font-weight: 600;
   border-radius: 9px;
   text-decoration: none;
   cursor: pointer;
-  background-color: #48d500;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.576), 0 6px 6px rgba(0, 0, 0, 0.23),
+    inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+  border: 1px solid rgba(165, 93, 7, 0.6);
   color: #fff;
-  border: none;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #008604;
+  background-color: rgb(43, 43, 43);
   color: #fff;
-  box-shadow: 0 0.4rem 0.8rem #019c06;
+  transform: translateY(0.1rem);
 }
 
 .btn-cta:link,
 .btn-cta:visited {
-  border-top-left-radius: 4rem;
-  border-bottom-right-radius: 4rem;
   transition: all 0.3s;
 }
 
@@ -238,14 +240,13 @@ body {
 /* links */
 
 .social-links {
-  background-color: rgb(0, 90, 18);
   border: solid transparent;
   border-radius: 50%;
-  padding: 0.6rem;
+  padding: 0.01rem;
 }
 
 .social-links:hover {
-  background-color: rgb(72, 213, 0);
+  color: #735f32;
 }
 
 .popz .ta {
