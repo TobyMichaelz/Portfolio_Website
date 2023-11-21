@@ -18,7 +18,7 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" />
-    <script defer src="js/Port_script.js"></script>
+    <script defer src="portfolio.js"></script>
 
     <title>My Portfolio</title>
   </head>
@@ -39,7 +39,7 @@
             <li><a class="nav-links" href="#"><i class="fa-solid fa-house fa hide"></i>Home</a></li>
             <li><a class="nav-links" href="#about"><i class="fa-solid fa-user fa hide"></i>About</a></li>
             <li><a class="nav-links" href="#portfolio"><i class="fa-regular fa-folder-open fa hide"></i>Portfolio</a></li>
-            <li><a class="nav-links" href="#services"><i class="fa-solid fa-briefcase fa hide"></i>Contact</a></li>
+            <li><a class="nav-links" href="#cta"><i class="fa-solid fa-briefcase fa hide"></i>Contact</a></li>
             <li><a class="nav-links nav-cta" href="#cta"><i class="fa-solid fa-phone fa hide"></i>Start a Project</a></li>
             
           </ul>
@@ -54,8 +54,8 @@
       <!-- //// -->
 
       <!-- HERO SECTION-->
-      <section class="section-hero">
-        <div class="hero">
+      <section class="section-hero show-animate">
+        <div class="hero animate">
           <!-- Image Box -->
           <div class="hero-img-box">
             <img src="images/tobiEdited.jpeg" alt="image" />
@@ -83,7 +83,7 @@
       <!-- ABOUT SECTION -->
       <section class="about-section" id="about">
         <!-- /////////// -->
-        <div class="about-text-box">
+        <div class="about-text-box animate">
           <p class="about-info prim-white">
             Hey! I’m Michael, a twenty-four years old Front-End Developer and Webflow Expert. 
             I am passionate about creating beautiful functional, and interactive websites that provide an excellent user experience. 
@@ -99,7 +99,7 @@
       <section class="section-skills" id="skills">
         <!-- flip-card -->
         <!-- 1st card -->
-        <div class="flip-card" tabIndex="0">
+        <div class="flip-card animate" tabIndex="1">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <h3 class="qualities">What I can do for you</h3>
@@ -122,10 +122,10 @@
           </div>
         </div>
         <!-- 2nd card -->
-        <div class="flip-card" tabIndex="0">
+        <div class="flip-card animate" tabIndex="2">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <h3 class="qualities">Tools I’m competent in</h3>
+              <h3 class="qualities">Tools I work with</h3>
               <img src="images/florid-software-developer.gif" alt="image" />
 
             </div>
@@ -151,7 +151,7 @@
           </div>
         </div>
         <!-- 3rd card  -->
-        <div class="flip-card" tabIndex="0">
+        <div class="flip-card animate" tabIndex="3">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <h3 class="qualities">What to expect</h3>
@@ -176,18 +176,41 @@
 
       <!-- PORTFOLIO SECTION -->
       <section id="portfolio" class="section-portfolio">
-        <div class="portfolio container">
+        <div class="portfolio container animate">
+
           <div class="project-desc">
-            <p class="color-head secondary-B margin-bottom-xs">Portfolio</p>
-            <p class="color-head-two heading-primary margin-bottom-small">
-              Featured Projects
+            <p class="">
+              Portfolio Projects
             </p>
           </div>
 
           <div class="project-list">
-            <div class="project">1</div>
-            <div class="project">2</div>
-            <div class="project">3</div>
+            <div class="projectBox">
+              <p class="projectName">Project 1 <span>..............................................................................................................................................................................................................................................................................................................</span></p>
+              <div class="project">1</div>
+            </div>
+            <div class="projectBox">
+              <p class="projectName floatright"><span>..........................................................................................................................................................................................................................................................................</span> Project Name 2</p>
+              <div class="project floatright">2</div>
+            </div>
+            <div class="projectBox">
+              <p class="projectName">Project Name 3 
+                <span>.............................................................................................................................................................................................................................................................................</span></p>
+              <div class="project">3</div>
+            </div>
+            <div class="projectBox ">
+              <p class="projectName floatright"><span>..........................................................................................................................................................................................................................................................................</span> Project Name 4</p>
+              <div class="project floatright">4</div>
+            </div>
+            <div class="projectBox ">
+              <p class="projectName">Project Name 5 <span>.............................................................................................................................................................................................................................................................................</span></p>
+              <div class="project">5</div>
+            </div>
+            <div class="projectBox ">
+              <p class="projectName floatright"><span>..........................................................................................................................................................................................................................................................................</span> Project Name 6</p>
+              <div class="project floatright">6</div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -195,15 +218,15 @@
 
       <!-- TESTIMONIALS -->
       <section id="portfolio" class="section-testimonials">
-        <div class="testimonials container">
+        <div class="testimonials container animate">
           <div class="testimonials-desc">
-            <p class="color-head secondary-B margin-bottom-xs">Testimonials</p>
-            <p class="color-head-two heading-primary margin-bottom-small">
+            <p class=" secondary-B margin-bottom-xs">Testimonials</p>
+            <p class=" heading-secondary margin-bottom-small">
               What Clients Saying About Me
             </p>
           </div>
 
-          <div class="Carousel">
+          <div class="Carousel animate">
             <img src="images/dave.jpg" alt="Tobi Michael" />
             <blockquote class="testimonial">
               <p class="testimonial-text">
@@ -229,16 +252,12 @@
 
       <!-- CTA FORM SECTION -->
       <section class="section-cta" id="cta">
-        <!-- skills Heading -->
-        <div class="cta container">
+        <div class="cta container animate">
           <!--  -->
-          <div class="skills-description center-text">
-            <p class="color-head heading-secondary">Let's Talk</p>
-            <p class="color-head-two heading-primary">
-              Have a Project Idea? Contact Me
+          <div class="cta-description center-text">
+            <p class="">Want to create amazing Projects? Lets Talk
             </p>
           </div>
-          <!-- skills grid -->
           <div class="cta-grid">
             <!-- 1st Box grid (WEB DEVELOPMENT) -->
             <div class="cta-box-one">
@@ -303,8 +322,8 @@
                   placeholder="Tell me about your project" 
                   required>
                 </div>
-                <button class="btn"><i class="fa-solid fa-paper-plane fa"></i>
-                  Send Message</button>
+                <a href="#" class="btn margin-bottom-medium">Start a Project request</a>
+
               </form>
             </div>
           </div>

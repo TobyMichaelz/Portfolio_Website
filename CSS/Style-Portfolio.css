@@ -85,7 +85,7 @@ header {
 .nav-links:link,
 .nav-links:visited {
   color: #eeee;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   text-decoration: none;
   padding: 1.5rem 2rem;
@@ -95,7 +95,7 @@ header {
 
 .nav-links:hover,
 .nav-links:active {
-  background-color: #bf942f;
+  background-color: #bf942f86;
   color: #ffffff;
 }
 
@@ -201,7 +201,7 @@ header {
   column-gap: 2.4rem;
 }
 
-.about-text-box .about-info {
+.about-info {
   font-size: 3.2rem;
   line-height: 1.5;
 }
@@ -225,6 +225,18 @@ header {
   width: 50rem;
   height: 50rem;
   perspective: 1000px;
+}
+
+/* on scroll animation */
+@keyframes fadeInScroll {
+  from {
+    opacity: -2;
+    transform: translateY(15rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
 }
 
 .flip-card img {
@@ -313,46 +325,54 @@ header {
 /* PROJECTS SECTION */
 .section-portfolio {
   padding: 10rem 0;
-  background-color: #c5ffbc;
+  background-color: #1b1b1b;
+  color: whitesmoke;
+  font-size: 4rem;
 }
 
 .portfolio {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10rem;
-  text-align: center;
+  align-items: start;
+  gap: 20rem;
 }
 
 .project-list {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 4rem;
+  gap: 20rem;
 }
 
 .project {
-  padding: 10rem 18rem;
-  border-radius: 2rem;
+  padding: 30rem 40rem;
+  background-color: #798a76;
 }
 
-.project:nth-child(1) {
-  background-color: #ffa88e;
+.projectBox {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6rem;
 }
 
-.project:nth-child(2) {
-  background-color: #84ff47;
+.projectName > span {
+  letter-spacing: -7.5px;
 }
 
-.project:nth-child(3) {
-  background-color: #9e9aff;
+.floatright {
+  align-self: end;
 }
+
 /* <!-- //////////// --> */
 /* <!-- //////////// --> */
 
 /* Testimonials */
 .section-testimonials {
-  padding: 10rem 0 14rem 0;
+  padding: 10rem;
+  background-color: #1b1b1b;
+  color: whitesmoke;
 }
 
 .testimonials {
@@ -472,11 +492,17 @@ header {
 
 /* CTA SECTION */
 .section-cta {
+  background-color: #111111;
   padding: 12rem 0 6.4rem;
 }
 
 .cta-description {
   margin-bottom: 10rem;
+}
+
+.cta-description > p {
+  font-size: 5rem;
+  color: whitesmoke;
 }
 
 .cta-grid {
@@ -487,15 +513,15 @@ header {
 }
 
 .cta-box-one {
+  transition: all 3s;
   padding: 6rem 4rem;
-  background-color: #3ac300;
   border-radius: 1.5rem;
   display: flex;
   gap: 4rem;
   flex-direction: column;
   align-items: start;
   align-self: center;
-  box-shadow: 0 0.24rem 2.8rem rgba(120, 120, 120, 0.876);
+  box-shadow: 0 0.24rem 1.4rem rgba(60, 60, 60, 0.876);
   animation: bouncing 3s 0s infinite linear;
 }
 
@@ -536,11 +562,11 @@ header {
 }
 
 .cta-form {
-  background-color: #f1ffef;
+  background-color: #101010;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0.24rem 2.8rem rgba(191, 191, 191, 0.876);
-  padding: 8rem 4rem;
+  box-shadow: 0 0.24rem 1.4rem rgba(60, 60, 60, 0.876);
+  padding: 8rem 4rem 2rem 4rem;
   border-radius: 2rem;
 }
 
@@ -553,11 +579,11 @@ header {
 
 .cta-form label {
   font-size: 2.4rem;
-  color: #004114;
+  color: whitesmoke;
 }
 
 .cta-form input {
-  background-color: #d4ffcc;
+  background-color: #3c3c3c;
   width: 50rem;
   height: 5rem;
   border-radius: 1rem;
@@ -567,36 +593,22 @@ header {
 }
 
 #Message {
-  height: 10rem;
+  padding-bottom: 2rem;
 }
 
 .cta-form button {
   align-self: center;
-  background-color: #117400;
-  color: whitesmoke;
   display: inline-block;
-  padding: 2rem 2rem;
-  font-size: 1.7rem;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  border-radius: 1rem;
 }
 
-.cta-form button:hover {
-  background-color: #37f316;
-}
-
-.cta-form button:active {
-  background-color: #9efc8e;
-}
 /* <!-- //////////// --> */
 /* <!-- //////////// --> */
 
 /* <!-- FOOTER --> */
 footer {
+  color: #f0f0f0ee;
   padding: 8rem;
-  background-color: black;
+  background-color: rgb(14, 13, 13);
 }
 
 footer .container {
@@ -609,7 +621,7 @@ footer .container {
 
 .smada {
   font-family: "Pacifico", cursive;
-  color: white;
+  color: #f0f0f0ee;
 }
 
 .footer-links {
@@ -619,9 +631,13 @@ footer .container {
 }
 
 .footer-links li a {
-  color: white;
+  color: #f0f0f0ee;
   font-size: 1.8rem;
   text-decoration: none;
+}
+
+.footer-links li a:hover {
+  color: #ffbd53;
 }
 
 .ftcp {

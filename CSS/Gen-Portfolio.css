@@ -72,6 +72,7 @@ html {
 }
 
 body {
+  background-color: black;
   overflow-x: hidden;
   font-family: sans-serif;
   line-height: 1;
@@ -80,7 +81,7 @@ body {
 }
 
 .container {
-  padding: 0 2rem;
+  padding: 0rem;
   margin: auto;
   max-width: 130rem;
 }
@@ -126,7 +127,7 @@ body {
 }
 
 .heading-primary {
-  font-size: 6.4rem;
+  font-size: 5.6rem;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: 1.5;
@@ -255,4 +256,21 @@ body {
   border: solid transparent;
   border-radius: 50%;
   padding: 1rem;
+}
+
+/* section animations */
+section .animate {
+  transition: 2s;
+}
+
+.section-hero .animate {
+  transform: translateX(-100%);
+}
+
+.section-hero.show-animate .animate {
+  transform: translateX(0);
+}
+
+.section-hero .animate {
+  transform: translateX(-100%);
 }
