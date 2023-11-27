@@ -56,18 +56,23 @@
     font-size: 3.4rem;
   }
 
+  .project-list {
+    gap: 8rem;
+  }
+
   .project {
-    padding: 20rem 30rem;
+    padding: 16rem 22rem;
+  }
+
+  .project_summary {
+    font-size: 1.6rem;
+    gap: 3rem;
   }
   /* ///////////// */
 
   /* TESTIMONIAL */
   .Carousel {
     padding: 2rem 3rem 2rem 5rem;
-  }
-
-  .Carousel img {
-    align-self: center;
   }
 
   .testimonial-text {
@@ -100,6 +105,11 @@
   .cta-box-two {
     padding: 1rem;
   }
+
+  .footerLogo {
+    width: 10rem;
+  }
+
   /* ///////////// */
 }
 /* ///////////////// */
@@ -194,7 +204,7 @@
 
   /* HERO */
   .section-hero {
-    padding: 16rem 0;
+    padding: 8rem 0;
   }
 
   .hero {
@@ -327,11 +337,16 @@
   }
 
   .project-list {
-    gap: 16rem;
+    gap: 8rem;
   }
 
   .project {
-    padding: 15rem 25rem;
+    padding: 12rem 18rem;
+  }
+
+  .project_summary {
+    font-size: 1.6rem;
+    gap: 3rem;
   }
   /* /////////// */
 
@@ -414,6 +429,13 @@
   .btn-mobile-nav {
     display: block;
   }
+
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 2rem 2rem;
+  }
   /* ///////////////// */
 
   /* HERO */
@@ -438,15 +460,23 @@
 
   .hero-text-box .btn {
     align-self: center;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 4rem;
+  }
+
+  .fa {
+    font-size: 2.8rem;
   }
   /* ////////////// */
 
   /* About */
   .about-info {
-    font-size: 2.4rem;
-    line-height: 1.6;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .cv_link {
+    padding: 1.6rem;
   }
   /* ///////////// */
 
@@ -456,11 +486,11 @@
   }
 
   .qualities {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   .flip-card-back p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     letter-spacing: 1px;
   }
 
@@ -469,15 +499,11 @@
   }
 
   .flip-card-back li {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
   }
   /* //////////// */
 
   /* PORTFOLIO */
-  .section-portfolio {
-    font-size: 3rem;
-    padding: 8rem 8rem;
-  }
 
   .portfolio {
     gap: 12rem;
@@ -488,14 +514,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16rem;
+    gap: 10rem;
   }
 
   .project {
-    padding: 15rem 25rem;
+    padding: 12rem 14rem;
+  }
+
+  .project_summary {
+    font-size: 1.6rem;
   }
   /* /////////// */
-
+  /* testimonial */
+  .testimonial-text {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.4rem;
+  }
+  /* //////// */
   /* CTA */
   .cta-grid {
     gap: 1rem;
@@ -575,6 +611,10 @@
   footer {
     padding: 4rem;
   }
+
+  .fa {
+    font-size: 2.6rem;
+  }
 }
 
 /*  Below 544px for BIG phone screens*/
@@ -588,13 +628,13 @@
   /* HERO */
   .socials {
     font-size: 1.6rem;
-    gap: 1rem;
+    gap: 2.2rem;
   }
   /* //////////// */
 
   /* RESUSABLE STYLES */
   .heading-primary {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-weight: 800;
     line-height: 1.2;
   }
@@ -643,7 +683,7 @@
   }
 
   .about-info {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
   }
   /* /////////////// */
 
@@ -672,6 +712,15 @@
 
   .project {
     padding: 10rem 20rem;
+  }
+
+  .project-list {
+    gap: 12rem;
+  }
+
+  .project_summary {
+    display: flex;
+    flex-direction: column;
   }
 
   .section-testimonials {
@@ -707,6 +756,22 @@
 /* /////////////// */
 
 @media (max-width: 26.5em) {
+  .section-hero {
+    padding: 14rem 0 2rem 0;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 4rem 4rem 0 4rem;
+    gap: 4rem;
+  }
+
+  .hero-text-box .btn {
+    align-self: center;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+
   .flip-card-back {
     padding: 4rem 3rem;
     align-items: center;
@@ -736,15 +801,6 @@
 
   .project {
     padding: 9rem 15rem;
-  }
-
-  .blog {
-    width: 83%;
-  }
-
-  .blog img {
-    width: 18rem;
-    height: 12rem;
   }
 }
 /* /////////////// */
