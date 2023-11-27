@@ -72,7 +72,8 @@ html {
 }
 
 body {
-  background-color: black;
+  background: radial-gradient(circle, #0b0f16 20%, rgb(0, 0, 0) 78%);
+  background-attachment: fixed;
   overflow-x: hidden;
   font-family: sans-serif;
   line-height: 1;
@@ -97,18 +98,6 @@ body {
 
 .tertiary-white {
   color: #bbbbbb;
-}
-
-.color-head {
-  color: #00d604;
-}
-
-.color-head-two {
-  color: #004f01;
-}
-
-.color-head-three {
-  color: #394a39;
 }
 
 .color-head-white {
@@ -142,7 +131,7 @@ body {
 .heading-secondary {
   font-size: 3.4rem;
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .secondary-B {
@@ -163,7 +152,7 @@ body {
 }
 
 .tertiary-B {
-  font-size: 1.85rem;
+  font-size: 1.68rem;
   line-height: 1.2;
 }
 
@@ -184,8 +173,8 @@ body {
   text-decoration: none;
   cursor: pointer;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.576), 0 6px 6px rgba(0, 0, 0, 0.23),
-    inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
-  border: 1px solid rgba(165, 93, 7, 0.6);
+    inset 0 -2px 5px 1px #dbb687, inset 0 -1px 1px 3px #dbb687;
+  border: 1px solid #dbb687;
   color: #fff;
 }
 
@@ -193,7 +182,7 @@ body {
 .btn:active {
   background-color: rgb(43, 43, 43);
   color: #fff;
-  transform: translateY(0.1rem);
+  transform: translateY(0.3rem);
 }
 
 .btn-cta:link,
