@@ -679,11 +679,11 @@
   }
   /* ABOUT */
   .about-section {
-    padding: 8rem 6rem;
+    padding: 4rem 2.5rem;
   }
 
   .about-info {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
   }
   /* /////////////// */
 
@@ -693,7 +693,8 @@
   }
 
   .qualities {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    text-align: center;
   }
 
   .flip-card-back ul {
@@ -707,7 +708,7 @@
 
   /* PORTFOLIO */
   .section-portfolio {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
 
   .project {
@@ -778,7 +779,7 @@
   }
 
   .flip-card-back p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
   }
 
@@ -788,7 +789,7 @@
   }
 
   .flip-card-back li {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .section-portfolio {
