@@ -322,9 +322,14 @@ header {
   background-color: #798a76;
 }
 
+.project_explanation {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 .projectBox {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   flex-direction: column;
   gap: 6rem;
 }
