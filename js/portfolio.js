@@ -17,3 +17,11 @@ const observer = new IntersectionObserver((entries) => {
 const Hiddensections = document.querySelectorAll(".hideAnimate");
 Hiddensections.forEach((el) => observer.observe(el));
 //
+
+/// Hero Changing Text
+var typing = new Typed(".word", {
+  strings: ["", "Front-End Developer", "Webflow Developer", "Designer"],
+  typeSpeed: 100,
+  backSpeed: 40,
+  loop: true,
+});
